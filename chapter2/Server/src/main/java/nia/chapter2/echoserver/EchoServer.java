@@ -25,9 +25,7 @@ public class EchoServer {
     public static void main(String[] args)
         throws Exception {
         if (args.length != 1) {
-            System.err.println("Usage: " + EchoServer.class.getSimpleName() +
-                " <port>"
-            );
+            System.err.println("Usage: " + EchoServer.class.getSimpleName() + " <port>");
             return;
         }
         //设置端口值（如果端口参数的格式不正确，则抛出一个NumberFormatException）

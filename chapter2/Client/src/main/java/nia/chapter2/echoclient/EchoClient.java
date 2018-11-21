@@ -24,8 +24,7 @@ public class EchoClient {
         this.port = port;
     }
 
-    public void start()
-        throws Exception {
+    public void start() throws Exception {
         EventLoopGroup group = new NioEventLoopGroup();
         try {
             //创建 Bootstrap
@@ -55,12 +54,9 @@ public class EchoClient {
         }
     }
 
-    public static void main(String[] args)
-            throws Exception {
+    public static void main(String[] args) throws Exception {
         if (args.length != 2) {
-            System.err.println("Usage: " + EchoClient.class.getSimpleName() +
-                    " <host> <port>"
-            );
+            System.err.println("Usage: " + EchoClient.class.getSimpleName() + " <host> <port>");
             return;
         }
 
